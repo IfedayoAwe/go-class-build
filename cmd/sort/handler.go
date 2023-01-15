@@ -66,5 +66,5 @@ func insertHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func showVersion(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, version)
+	fmt.Fprintln(w, r, version)
 }
